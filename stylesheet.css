@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* header*/
+header{
+    height: 65px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.582);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+}
+.left-header{
+  flex-grow: 3;
+}
+.center-header{
+  flex-grow: 7;
+}
+.right-header{
+  flex-grow: 0;
+  display: flex;
+}
+.right-header a {
+  text-decoration: none;
+  margin:0 2px ;
+  background-color: rgba(255, 255, 255, 0.3);
+  line-height: 65px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  display:inline-block;
+}
+.right-header :hover{
+  background-color: rgba(253, 1, 1, 0.582);
+  transition: 0.5s;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  display: inline-block;
+}
+ul li:hover {
+  background: rgba(29, 29, 29, 0.829) ;
+}
+ul li:hover ul {
+  display: block;
+}
+ul li ul {
+  position: absolute;
+  width: 125px;
+  display: none;
+}
+ul li ul li {
+  background: rgba(29, 29, 29, 0.829) ;
+  display: block;
+}
+ul li ul li a {
+  display:block !important;
+}
+ul li ul li:hover {
+  background: #666;
+}
+
+
+/* konten utama */
+a {
+text-decoration: none;
+}
+
+.top-wrapper {
+padding: 180px 0 100px 0;
+background-image: url(assets/imagesss.jpg);
+background-size: cover;
+text-align: center;
+height: 600px;
+}
+
+.top-wrapper h1 {
+opacity: 0.7;
+font-size: 45px;
+letter-spacing: 5px;
+margin-bottom: 10px;
+color: white;
+}
+
+.top-wrapper p {
+opacity: 0.7;
+margin-bottom: 3px;
+font-size: 23px;
+color: black;
+}
+
+.btn-wrapper {
+text-align: center;
+margin: 20px 0;
+}
+
+.signin {
+background-color: #ffffff;
+margin-right: 10px;
+}
+
+.signup {
+background-color: #ffffff;
+}
+
+.btn {
+padding: 12px 24px;
+color: black;
+display: inline-block;
+opacity: 0.8;
+border-radius: 4px;
+text-align: center;
+}
+
+.btn:hover {
+opacity: 1;
+}
+
+.fa {
+margin-right: 5px;
+}
+
+/* extra 1 */
+*{box-sizing: border-box;}
+.lesson-wrapper {
+  height: 500px;
+  padding-bottom: 50px;
+  background-color: #806f66;
+  text-align: center;
+  display: 100%;
+}
+
+.heading {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: #fff2bc;
+}
+
+.heading h2 {
+  font-weight: normal;
+  letter-spacing: 10px;
+  font-family: sans-serif
+}
+
+.lesson {
+  float: left;
+  width: 20%;
+}
+
+.lesson-icon {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #383636;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.box {
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  width: 200px;
+  height: 50px;
+  background-color: #ff5a0b;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: block;
+}
+
+
+.foto {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 80%;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  color: #fff2bc;
+  font-family: sans-serif;
+  letter-spacing: 10px;
+  font-weight: normal;
+}
+
+@media (max-width: 1000px) {
+  lesson {
+    width: 50%;
+  }
+}
+
+@media (max-width: 670px) {
+  width: 100%;
+}
+
+/* extra 2 */
+*{box-sizing: border-box;}
+.extra2 {
+  opacity: 1;
+  padding: 20px 20px;
+  margin:20px 10px;
+  border: 1px solid #FBEEE6;
+  width: 15%;
+  font-family: "serif";
+  background-color: #FF5733;
+  text-indent: 50px;
+  line-height: 1.2;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  padding: 10px 15px;
+  text-indent:10px;
+  text-align: center;
+  flex:auto;
+  float: left;
+
+}
+.extra2:hover{
+ animation-name: extra2;
+ animation-duration: 3s;
+ transition-duration: 0.3s;
+ color:white;
+}
+
+@keyframes extra2{
+from {background-color:#F39C12;}
+to {background-color:#FF5733}
+}
+
+.container-extra2 {
+  position:relative;
+  opacity: 1;
+  padding: 20px 20px;
+  margin: 20px auto;
+  border: 1px solid white ;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  width: 1500px;
+  background-color: white;
+  text-indent: 50px;
+  line-height: 20px;
+  border-radius: 8px;
+  padding:20px;
+  width:1400px;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.text-content h2{
+margin:auto;
+}
+
+
+/* footer */
+footer{
+  height: 100px;
+  background-color: darkslategrey;
+}
